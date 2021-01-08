@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/common :: html-head">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- bootstrap -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/heroic-features.css" rel="stylesheet">
+
+<link href="css/selectSeat.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="../">Box Office</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" href="#">Home
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="selectSeat">
+		<h1 align="center">좌석 선택</h1>
+		<h3>영화 제목</h3>
+		<h3>0000년 00월 00일 00:00</h3><br/><br/>
+		
+		<p id="screen">screen</p>
+		<div class="seat-wrapper"></div><br/><br/>
+
+		<p>
+			선택 된 인원 수 : <input type="text" id="number" readonly="readonly" /> 명
+		</p>
+		<p>
+			가격 : <input type="text" id="price" readonly="readonly" /> 원
+		</p>
+	</div>
+
+	<div class="card-footer" align="center">
+		<a href="selectSeat.html" class="btn btn-primary">결제하기</a>
+	</div>
+
+	<script src="js/selectSeat.js"></script>
+
+</body>
+</html>
