@@ -37,6 +37,9 @@ public class BookController {
 		model.addAttribute("dto", dto);
 		model.addAttribute("moviename", moviename);
 		
+		String reserveSeat = paymentBiz.selectSeat(dto);
+		model.addAttribute("reserveSeat", reserveSeat);
+		
 		return "selectSeat";
 	}
 
@@ -58,9 +61,6 @@ public class BookController {
 		
 		return "payment";
 	}
-	
-	//reserveList db update
-	//결제 db update
 	
 	@PostMapping("/paymentSuccess")
 	public void paymentSuccess(HttpSession session, PaymentDto paymentDto) {

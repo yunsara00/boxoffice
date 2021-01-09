@@ -8,6 +8,7 @@
 <link href="css/heroic-features.css" rel="stylesheet">
 
 <link href="css/selectSeat.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -39,6 +40,7 @@
 		<input type="hidden" name="movieno" th:value="${dto.movieno}"/>
 		<input type="hidden" name="reserve_date" th:value="${dto.reserve_date}"/>
 		<input type="hidden" name="reserve_time" th:value="${dto.reserve_time}"/>
+		<input type="hidden" id="reservedSeat" th:value="${reserveSeat}"/>
 		
 		<div id="selectSeat">
 			<h1 align="center">좌석 선택</h1>
@@ -63,7 +65,7 @@
 		<input type="hidden" id="seatList" name="seat"/>
 	</form>
 	
-	<script src="js/selectSeat.js"></script>
+	<script th:inline="javascript" src="js/selectSeat.js"></script>
 
 </body>
 </html>
