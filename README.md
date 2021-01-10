@@ -1,4 +1,4 @@
-# 토이 프로젝트 (영화 예매 사이트)
+# 토이 프로젝트
 pdf 파일 -> [BoxOffice.pdf](https://github.com/yunsara00/boxoffice/files/5793139/BoxOffice.pdf)
 
 ![BoxOffice](https://user-images.githubusercontent.com/70271012/104132353-1240e080-53c0-11eb-9fe1-2e45ac9572a1.png)
